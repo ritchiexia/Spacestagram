@@ -6,8 +6,8 @@ const PostList = () => {
   const [posts, setPosts] = useState([])
 
   React.useEffect(() => {
-    axios.get("https://api.nasa.gov/planetary/apod?api_key=dDgQPpBDapWWbmAmU1PpAeEycjbWg7QUJiETSsNN", { params: { count: 5 } }).then((response) => {
-      setPosts(response.data);
+    axios.get("https://api.nasa.gov/planetary/apod?api_key=dDgQPpBDapWWbmAmU1PpAeEycjbWg7QUJiETSsNN", { params: { start_date: "2022-01-08" } }).then((response) => {
+      setPosts(response.data.reverse());
     });
   }, []);
 

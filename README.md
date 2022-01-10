@@ -4,9 +4,12 @@ Utilizes NASA's [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astrop
 Currently displays 5 random posts upon loading the page, as well as their titles, dates, and descriptions.
 
 TODO:
-- handle video posts
-- add 'Like' button functionality
+- refine 'Like' button functionality/add animation for the heart
 - add a navigation bar that allows users to choose most recent, random, or specific posts
-- make each post have a maximum-line preview, and have a button to expand the description
+- smooth the transition between explanation preview and full explanation for each post
+- add functionality without mouse
+- add animations
+- add fancier design
+- add tooltip when hovering or clicking on share link
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
