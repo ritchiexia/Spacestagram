@@ -1,7 +1,7 @@
 # Spacestagram 🔭
 Utilizes NASA's [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) Open API to display pictures and descriptions from previous and current posts.
 
-Currently displays 5 random posts upon loading the page, as well as their titles, dates, and descriptions.
+Currently displays all posts since Jan 8, as well as their titles, dates, and descriptions.
 
 TODO:
 - refine 'Like' button functionality/add animation for the heart
