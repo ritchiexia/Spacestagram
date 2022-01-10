@@ -4,6 +4,7 @@ Utilizes NASA's [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astrop
 Currently displays all posts since Jan 8, as well as their titles, dates, and descriptions.
 
 TODO:
+- add functionality to load more posts upon reaching the bottom of the page
 - refine 'Like' button functionality/add animation for the heart
 - add a navigation bar that allows users to choose most recent, random, or specific posts
 - smooth the transition between explanation preview and full explanation for each post
