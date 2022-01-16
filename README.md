@@ -5,11 +5,13 @@ Currently displays 5 random posts upon loading the page, as well as their titles
 
 TODO:
 - refine 'Like' button functionality/add animation for the heart
-- add a navigation bar that allows users to choose most recent, random, or specific posts
+- ~~add a navigation bar that allows users to choose most recent, random posts~~
 - smooth the transition between explanation preview and full explanation for each post
 - add functionality without mouse
 - add animations
 - add fancier design
 - add tooltip when hovering or clicking on share link
+- add background transition to have space-related emojis or clip art show up from bottom
+- add loading animation
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #E8E8E8;
@@ -14,6 +14,33 @@ body {
 
 code {
   font-family: Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-radius: 10px;
+  background-color: rgb(240,240,240);
+}
+
+.navlink {
+  padding: 9px 25px;
+  background-color: rgb(240,240,240);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: large;
+  transition: all 0.3s ease 0s;
+}
+
+.navlink:hover {
+  background-color: rgb(230,230,230);
+}
+
+.navlink:active {
+  background-color: rgb(230,230,230);
 }
 
 .like-button {
