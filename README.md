@@ -1,7 +1,7 @@
 # Spacestagram 🔭
 Utilizes NASA's [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) Open API to display pictures and descriptions from previous and current posts.
 
-Currently displays all posts since Jan 8, as well as their titles, dates, and descriptions.
+Choose between displaying all posts since Jan 8, as well as their titles, dates, and descriptions, or 3 random posts.
 
 TODO:
 - add functionality to load more posts upon reaching the bottom of the page
