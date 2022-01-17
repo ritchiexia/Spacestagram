@@ -43,94 +43,13 @@ code {
   background-color: rgb(230,230,230);
 }
 
-.like-button {
-  width: 80px;
-  border: 2px solid lightgray;
-  border-radius: 5px;
-  padding: 5px 15px;
-  background-color: white;
-  transition-duration: 0.4s;
-}
-
-.like-button:hover {
-  background-color: #E8E8E8;
-  cursor: pointer;
-}
-
-.share-link {
-  border: none;
-  background-color: transparent;
-  justify-self: end;
-  cursor: pointer;
-  margin-left: auto;
-}
-
-.tooltip {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.main-column {
-  max-width: 500px;
+.container {
+  max-width: 800px;
   margin: auto;
   overflow: auto;
   min-height: 300px;
   padding: 10px;
 }
-
-.post-cell {
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 10px auto;
-}
-
-.post-img {
-  width: 100%;
-}
-
-.post-content {
-  padding: 10px;
-}
-
-.post-explanation {
-  font-size: 15px;
-}
-
-.post-explanation-preview {
-  font-size: 15px;
-  height: 95px;
-  overflow: hidden;  
-}
-
-.post-explanation-expand {
-  width: 100%;
-  border: none;
-  border-radius: 4px;
-  background-color: rgb(240,240,240);
-  cursor: pointer;
-}
-
-.like-box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  margin-top: 15px;
-}
-
 
 .video-responsive {
   overflow: hidden;
