@@ -16,6 +16,22 @@ const AppFrame = () => {
     []
   );
 
+  function getDate() {
+    var d = new Date();
+    d.setDate(d.getDate() - 9);
+    
+    var month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
+}
+
   return (
     <Frame
       showMobileNavigation={mobileNavigationActive}
@@ -46,7 +62,7 @@ const AppFrame = () => {
       }
     >
       <Routes>
-        <Route path="/recent" element={<PostList parameters={{ start_date: "2022-01-08" }} />} />
+        <Route path="/recent" element={<PostList parameters={{ start_date: getDate() }} />} />
         <Route path="/random" element={<PostList parameters={{ count: 3 }} />} />
         <Route path="/*" element={<Navigate to="/recent" replace />} />
       </Routes>
