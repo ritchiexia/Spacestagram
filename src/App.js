@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import enTranslations from '@shopify/polaris/locales/en.json';
 import { AppProvider } from '@shopify/polaris'
 import AppFrame from "./components/AppFrame";
@@ -26,11 +26,11 @@ function App() {
   }
 
   return (
-      <BrowserRouter>
+      <Router>
         <AppProvider theme={theme} i18n={enTranslations}>
           <AppFrame />
         </AppProvider>
-      </BrowserRouter>
+      </Router>
   );
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import YoutubeEmbed from './YoutubeEmbed';
 import { Heading, Icon, Stack, Tooltip } from '@shopify/polaris';
 import { CalendarMinor, ProfileMinor, ShareMinor} from '@shopify/polaris-icons';

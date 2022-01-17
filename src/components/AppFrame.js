@@ -47,8 +47,8 @@ const AppFrame = () => {
     >
       <Routes>
         <Route path="/recent" element={<PostList parameters={{ start_date: "2022-01-08" }} />} />
-        <Route path="random" element={<PostList parameters={{ count: 3 }} />} />
-        <Route path="*" element={<Navigate to="/recent" replace />} />
+        <Route path="/random" element={<PostList parameters={{ count: 3 }} />} />
+        <Route path="/*" element={<Navigate to="/recent" replace />} />
       </Routes>
     </Frame>
   )
