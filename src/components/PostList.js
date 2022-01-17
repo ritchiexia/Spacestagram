@@ -11,6 +11,7 @@ const PostList = ({parameters}) => {
       setPosts(response.data.reverse())
       console.log(response.data.reverse())
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

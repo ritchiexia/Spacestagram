@@ -50,7 +50,7 @@ const Post = ({ post }) => {
             </ToggleButton>
           </Tooltip>
           <div className="share-link">
-            <Tooltip active content="Copy image link" active={false} dismissOnMouseOut={true} preferredPosition="above">
+            <Tooltip content="Copy image link" active={false} dismissOnMouseOut={true} preferredPosition="above">
               <button className="share-link-button" onClick={() => navigator.clipboard.writeText(post.url)}>
                 <Icon source={ShareMinor} />
               </button>
