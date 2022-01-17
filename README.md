@@ -5,14 +5,22 @@ Choose between displaying all posts since Jan 8, as well as their titles, dates,
 
 TODO:
 - add functionality to load more posts upon reaching the bottom of the page
-- refine 'Like' button functionality/add animation for the heart
+- add json or env file for API url
+- add "Liked" page using localStorage
+- ~~refine 'Like' button functionality/add animation for the heart~~
 - ~~add a navigation bar that allows users to choose most recent, random posts~~
-- smooth the transition between explanation preview and full explanation for each post
 - add functionality without mouse
 - add animations
 - add fancier design
-- add tooltip when hovering or clicking on share link
+- ~~add tooltip when hovering or clicking on share link and like button~~
 - add background transition to have space-related emojis or clip art show up from bottom
 - add loading animation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Node Modules
+```
+npm i @shopify/polaris
+npm i axios
+npm i react-router-dom
+npm i @mui/material @emotion/react @emotion/styled
+npm i @mui/icons-material
+```

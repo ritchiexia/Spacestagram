@@ -9,13 +9,14 @@ const PostList = ({parameters}) => {
   React.useEffect(() => {
     axios.get("https://api.nasa.gov/planetary/apod?api_key=dDgQPpBDapWWbmAmU1PpAeEycjbWg7QUJiETSsNN", { params: parameters }).then((response) => {
       setPosts(response.data.reverse())
+      console.log(response.data.reverse())
     });
   }, []);
 
   return (
     <div className="container">
       {posts.map((post) => (
-        <Post post={post} />
+        <Post key={post.date} post={post} />
       ))}
     </div>
   )
