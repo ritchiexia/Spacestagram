@@ -33,7 +33,7 @@ const AppFrame = () => {
           items: [{onAction: useCallback(() => navigate("/profile"),[]), content: 'View profile', icon: CustomersMajor}],
         },
         {
-          items: [{onAction: useCallback(() => window.location.href = "_https://github.com/ritchiexia/Spacestagram",[]), content: 'Github repo', icon: CodeMajor}],
+          items: [{onAction: useCallback(() => window.open("https://github.com/ritchiexia/Spacestagram", '_blank').focus(),[]), content: 'Github repo', icon: CodeMajor}],
         },
       ]}
       name="User"
