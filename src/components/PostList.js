@@ -7,7 +7,7 @@ const PostList = ({parameters}) => {
   const [posts, setPosts] = useState([])
   
   React.useEffect(() => {
-    axios.get("https://api.nasa.gov/planetary/apod?api_key=dDgQPpBDapWWbmAmU1PpAeEycjbWg7QUJiETSsNN", { params: parameters }).then((response) => {
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}`, { params: parameters }).then((response) => {
       setPosts(response.data.reverse())
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps

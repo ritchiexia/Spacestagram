@@ -1,8 +1,9 @@
 import { Frame, Navigation, TopBar } from "@shopify/polaris";
-import { CalendarTickMajor, RefreshMajor } from '@shopify/polaris-icons';
-import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { CalendarTickMajor, RefreshMajor, CodeMajor, CustomersMajor } from '@shopify/polaris-icons';
+import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import { useState, useCallback } from 'react'
 import PostList from "./PostList";
+import Profile from "./Profile";
 
 const AppFrame = () => {
   const location = useLocation()
@@ -16,7 +17,33 @@ const AppFrame = () => {
     []
   );
 
-  function getDate() {
+  const navigate = useNavigate()
+  
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false)
+  const toggleIsUserMenuOpen = useCallback(
+    () => setIsUserMenuOpen((isUserMenuOpen) => !isUserMenuOpen),
+    [],
+  );
+
+  const userMenuMarkup = (
+    <TopBar.UserMenu
+      actions={[
+        {
+          // eslint-disable-next-line react-hooks/exhaustive-deps
+          items: [{onAction: useCallback(() => navigate("/profile"),[]), content: 'View profile', icon: CustomersMajor}],
+        },
+        {
+          items: [{onAction: useCallback(() => window.location.href = "_https://github.com/ritchiexia/Spacestagram",[]), content: 'Github repo', icon: CodeMajor}],
+        },
+      ]}
+      name="User"
+      initials="U"
+      open={isUserMenuOpen}
+      onToggle={toggleIsUserMenuOpen}
+    />
+  );
+
+  const getDate = () => {
     var d = new Date();
     d.setDate(d.getDate() - 9);
     
@@ -40,6 +67,7 @@ const AppFrame = () => {
         <TopBar
           showNavigationToggle
           onNavigationToggle={toggleMobileNavigationActive}
+          userMenu={userMenuMarkup}
         />
       }
       navigation={
@@ -64,6 +92,7 @@ const AppFrame = () => {
       <Routes>
         <Route path="/recent" element={<PostList parameters={{ start_date: getDate() }} />} />
         <Route path="/random" element={<PostList parameters={{ count: 10 }} />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/*" element={<Navigate to="/recent" replace />} />
       </Routes>
     </Frame>

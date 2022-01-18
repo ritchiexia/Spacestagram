@@ -12,8 +12,9 @@ const Post = ({ post }) => {
   const [showLiked, setShowLiked] = useState(false);
   const [showExpanded, setShowExpanded] = useState(false)
 
-  function convertDate(date) {
+  const convertDate = (date) => {
     var newDate = new Date(date);
+    newDate.setDate(newDate.getDate() + 1)
     return newDate.toLocaleString("en-CA", {
       month: "short",
       day: "numeric",
