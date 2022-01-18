@@ -1,4 +1,4 @@
-# [Spacestagram](https://stoic-galileo-b47904.netlify.app/) 🔭
+# [Spacestagram](https://spctgrm.netlify.app/) 🔭
 Utilizes NASA's [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) Open API to display pictures and descriptions from previous and current posts.
 
 Choose between displaying the 10 most recent Pictures of the Day with their titles, dates, copyrights, and descriptions; or 10 random posts.
