@@ -1,4 +1,8 @@
-import { SkeletonBodyText, SkeletonDisplayText, TextContainer } from "@shopify/polaris"
+import {
+  SkeletonBodyText,
+  SkeletonDisplayText,
+  TextContainer,
+} from "@shopify/polaris";
 
 const Profile = () => {
   return (
@@ -8,9 +12,8 @@ const Profile = () => {
         <SkeletonDisplayText size="large" />
         <SkeletonBodyText size="large" />
       </TextContainer>
-
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

@@ -6,10 +6,10 @@
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
 }
 
 code {
@@ -26,7 +26,7 @@ code {
 }
 
 .like-button:hover {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   cursor: pointer;
 }
 
@@ -60,11 +60,11 @@ code {
 .post-explanation-preview {
   font-size: 15px;
   height: 40px;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 .post-explanation-expand {
-  color: #2563EB;
+  color: #2563eb;
   border: none;
   border-radius: 4px;
   background-color: transparent;
