@@ -31,5 +31,5 @@ npm start
 - add animations
 - add fancier design
 - ~~add tooltip when hovering or clicking on share link and like button~~
-- add background transition to have space-related emojis or clip art show up from bottom
-- add loading animation
+- add background transition to have space-related emojis or clip art show up from bottom **probably use parallax effects with perspective and translate-z**
+- ~~add loading animation~~
