@@ -73,9 +73,9 @@ const Post = ({ post }) => {
               }}
             >
               {showLiked ? (
-                <FavoriteIcon sx={{ color: "red" }} fontSize="large" />
+                <FavoriteIcon sx={{ color: "red" }} fontSize="medium" />
               ) : (
-                <FavoriteBorderIcon fontSize="large" />
+                <FavoriteBorderIcon fontSize="medium" />
               )}
             </ToggleButton>
           </Tooltip>
@@ -91,7 +91,7 @@ const Post = ({ post }) => {
                 selected={false}
                 onChange={() => navigator.clipboard.writeText(post.url)}
               >
-                <ShareIcon fontSize="large" />
+                <ShareIcon fontSize="medium" />
               </ToggleButton>
             </Tooltip>
           </div>
