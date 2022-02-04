@@ -40,10 +40,9 @@ const AppFrame = () => {
     <TopBar.UserMenu
       actions={[
         {
-          // eslint-disable-next-line react-hooks/exhaustive-deps
           items: [
             {
-              onAction: useCallback(() => navigate("/profile"), []),
+              onAction: useCallback(() => navigate("/profile"), [navigate]),
               content: "View profile",
               icon: CustomersMajor,
             },
